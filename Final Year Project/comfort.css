@@ -1,0 +1,71 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+/* body */
+body{
+    background-color:rgb(156, 207, 246);
+}
+ #home::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* utillity classes */
+.h-primary{
+    font-size: 7rem;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h-secondry{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: cursive;
+}
+
+.center{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* services  */
+#services{
+margin: 10px;
+display: flex;
+}
+#services .box{
+    border: 5px solid rgb(4, 55, 106);
+}
+h2{
+    color: rgb(6, 74, 222);
+}
+.center{
+    color: rgb(6, 31, 158);
+}
+.box{
+    margin: 15px;
+    background-color: rgba(112, 114, 115, 0.541);
+    border-radius: 30px;
+    padding: 10px;
+}
+#services .box img{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    padding-right: 20px;
+    padding: 20px;
+}
