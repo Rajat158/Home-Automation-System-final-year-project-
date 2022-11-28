@@ -1,120 +1,70 @@
-
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
-    scroll-behavior: smooth;
-}
-/* css variables */
-:root{
-    --navbar-height:59px;
-}
-/* body */
 body{
-    background-color:rgb(156, 207, 246);
-}
-  
-  #app-cover {
-    display: table;
-    width: 700px;
-    margin: 50px 400px;
-    counter-reset: button-counter;
-  }
+  margin: 0;
+  margin-top: -30px;
+  padding: 0;
+  background-color: rgb(156, 207, 246);
 
-  .row {
-    display: table-row;
-  }
+}
 
-  .knobs,
-  .layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .button {
-    position: relative;
-    top: 50%;
-    width: 500px;
-    height: 200px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .button.r,
-  .button.r .layer {
-    border-radius: 100px;
-  }
-  
-  
-  .checkbox {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 200px;
-    margin: 0;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
-  }
-  
-  .knobs {
-    z-index: 2;
-  }
-  
-  .layer {
-    width: 100%;
-    background-color: #f39b9b;
-    transition: 0.5s ease all;
-    z-index: 1;
-  }
-  
-  /* Button 1 */
-  #button-1 .knobs:before {
-    content: "OFF";
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    width: 20px;
-    height: 10px;
-    color: rgb(253, 253, 253);
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1;
-    padding: 50px 50px;
-    background-color: #f61111;
-    border-radius: 50%;
-    transition: 0.5s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
-  }
-  
-  #button-1 .checkbox:checked + .knobs:before {
-    content: "ON";
-    left: 340px;
-    background-color: #08a810;
-  }
-  
-  #button-1 .checkbox:checked ~ .layer {
-    background-color: #5fd86d;
-  }
-  
-  #button-1 .knobs,
-  #button-1 .knobs:before,
-  #button-1 .layer {
-    transition: 0.5s ease all;
-  }
-  .h-primary{
-    font-size: 6rem;
-    padding-top: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
-.center{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.button_on{
+  position: relative;
+  text-align: center;
+  width: 250px;
+  padding: 30px;
+  font-size: 25px;
+  color: rgb(10, 88, 3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  border: 6px solid rgb(10, 88, 3);
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1s;
 }
-.center{
-    color: rgb(6, 31, 158);
+
+.button_on:hover{
+  box-shadow: 0 5px 50px 0 rgb(14, 162, 9) inset, 0 5px 50px 0 rgb(14, 162, 9),0 5px 50px 0 rgb(14, 162, 9) inset, 0 5px 50px 0 rgb(14, 162, 9);
+  text-shadow: 0 0 5px rgb(10, 88, 3);
+
 }
+.button_off{
+  position: relative;
+  text-align: center;
+  width: 250px;
+  padding: 30px;
+  font-size: 25px;
+  color: rgb(99, 5, 5);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  border: 6px solid rgb(99, 5, 5);
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1s;
+}
+
+.button_off:hover{
+  box-shadow: 0 5px 50px 0 rgb(200, 9, 9) inset, 0 5px 50px 0 rgb(200, 9, 9),0 5px 50px 0 rgb(200, 9, 9) inset, 0 5px 50px 0 rgb(200, 9, 9);
+  text-shadow: 0 0 5px rgb(99, 5, 5);
+
+}
+.sps{
+  padding-bottom: 30px;
+}
+.door{
+  padding-top:-10px;
+  padding-left:550px;
+  color: rgb(6, 31, 158);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5rem;
+}
+

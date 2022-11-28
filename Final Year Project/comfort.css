@@ -1,6 +1,8 @@
 /* css reset */
 *{
     margin: 0;
+    margin-top: -10px;
+    margin-bottom: -10px;
     padding: 0;
 }
 html{
@@ -60,10 +62,11 @@ h2{
     background-color: rgba(112, 114, 115, 0.541);
     border-radius: 30px;
     padding: 10px;
+    height: 500px;
+    width: 450px;
 }
 #services .box img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
     margin: auto;
     display: block;
     padding-right: 20px;

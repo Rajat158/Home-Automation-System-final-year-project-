@@ -1,6 +1,8 @@
 /* css reset */
 *{
-    margin: 0;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: -10px;
     padding: 0;
 }
 html{
@@ -13,6 +15,7 @@ html{
 /* body */
 body{
     background-color:rgb(156, 207, 246);
+    padding-left: 30px;
 }
  #home::before{
     position: absolute;
@@ -56,15 +59,19 @@ h2{
     color: rgb(6, 31, 158);
 }
 .box{
+    height: 500px;
+    width: 450px;
     margin: 15px;
     background-color: rgba(112, 114, 115, 0.541);
     border-radius: 30px;
     padding: 10px;
 }
 #services .box img{
-    height: 400px;
+    height: 330px;
     margin: auto;
     display: block;
     padding-right: 20px;
     padding: 20px;
 }
+
+

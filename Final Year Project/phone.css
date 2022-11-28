@@ -1,0 +1,16 @@
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size:7rem;
+    word-wrap: break-word;
+}
